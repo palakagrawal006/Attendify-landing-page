@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendify | AI Attendance</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='img/attendify_icon.png')}}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <a class="logo" href="#top"><i>✓</i><em style="font-style:normal">Attend<span>ify</span></em></a>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#journey">How it works</a>
+            <a href="#tech">Tech</a>
+        </div>
+
+        <a class="btn p launch" href="https://attendify-ai-attendance.streamlit.app/">Launch App</a>
+    </nav>
+
+    <!-- hero -->
+    <header class="hero" id="top">
+        <span class="pill">AI-POWERED ATTENDANCE</span>
+        <h1>Smarter Attendance.<br>Simpler <span class="gold">Classrooms.</span></h1>
+
+        <p>Mark a whole class present in seconds with face recognition, take a hands-free voice roll call, and get
+            reports the moment you finish.</p>
+
+        <div class="row">
+            <a class="btn p launch" href="https://attendify-ai-attendance.streamlit.app/">Launch Attendify →</a>
+            <a class="btn s" href="#journey">See how it works</a>
+        </div>
+
+        <div class="floating-card">
+            <img src="{{url_for('static', filename='img/demo/img1.png')}}" alt="">
+        </div>
+    </header>
+
+    <!-- features -->
+    <!-- wherever we wrote #feature - this will open -->
+    <section id="features">
+        <div class="wrap center">
+            <div class="eyebrow">Features</div>
+            <h2>Everything attendance needs</h2>
+            <p class="lead">No sheets, no roll calls, no proxy attendance.</p>
+            <div class="grid3" style="text-align:left">
+                <div class="card">
+                    <div class="ic">📷</div>
+                    <h3>Face recognition</h3>
+                    <p>Snap one class photo and every enrolled face is matched and marked present.</p>
+                </div>
+                <div class="card">
+                    <div class="ic">🎙️</div>
+                    <h3>Voice roll call</h3>
+                    <p>Students speak in turn; voice embeddings confirm who is actually present.</p>
+                </div>
+                <div class="card">
+                    <div class="ic">📊</div>
+                    <h3>Instant reports</h3>
+                    <p>Per-subject and per-student attendance, always up to date.</p>
+                </div>
+                <div class="card">
+                    <div class="ic">🔗</div>
+                    <h3>Join by link or QR</h3>
+                    <p>Share a class link or QR code. Students enroll in one tap.</p>
+                </div>
+                <div class="card">
+                    <div class="ic">🛡️</div>
+                    <h3>Secure by design</h3>
+                    <p>Hashed passwords and embeddings stored server-side, never in the browser.</p>
+                </div>
+                <div class="card">
+                    <div class="ic">⚡</div>
+                    <h3>Built for speed</h3>
+                    <p>Verification takes seconds, even for a full classroom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- journey -->
+    <section id= "journey" class="wrap jour">
+        
+            <input type="radio" name="who" id="r-t" checked hidden>
+            <input type="radio" name="who" id="r-s" hidden>
+            <div class="center">
+                <div class="eyebrow">How it works</div>
+                <h2>One platform, two journeys</h2>
+                <div class="toggle"><label for="r-t" class="lt">For Teachers</label><label for="r-s" class="ls">For
+                        Students</label></div>
+            </div>
+            <div class="track" id="t-teacher">
+                <div class="step">
+                    <div class="txt">
+                        <div class="num">STEP 01</div>
+                        <h3>Create a class and share it</h3>
+                        <p>Create a subject with its code and section, then share a link or QR code. Students join on
+                            their own, with no manual lists.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/teacher1.png')}}" alt="Create a class and share it"
+                            loading="lazy"></div>
+                </div>
+                <div class="step rev">
+                    <div class="txt">
+                        <div class="num">STEP 02</div>
+                        <h3>Take attendance in seconds</h3>
+                        <p>Pick a subject, then capture or upload classroom photos, or run a hands-free voice roll call.
+                            Matching runs only against that subject's enrolled students.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/teacher2.png')}}" alt="Take attendance in seconds"
+                            loading="lazy"></div>
+                </div>
+                <div class="step">
+                    <div class="txt">
+                        <div class="num">STEP 03</div>
+                        <h3>Review and save</h3>
+                        <p>Review every match with the photo it came from before you confirm. Absent students are
+                            recorded too, all under one shared timestamp.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/teacher3.png')}}" alt="Review and save" loading="lazy"></div>
+                </div>
+                <div class="step rev">
+                    <div class="txt">
+                        <div class="num">STEP 04</div>
+                        <h3>Reports that explain themselves</h3>
+                        <p>Every session is logged with its time, subject and a present count, so past attendance is
+                            always one click away.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/teacher4.png')}}" alt="Reports that explain themselves"
+                            loading="lazy"></div>
+                </div>
+            </div>
+            <div class="track" id="t-student">
+                <div class="step">
+                    <div class="txt">
+                        <div class="num">STEP 01</div>
+                        <h3>Register with your face</h3>
+                        <p>One camera capture creates your account, and an optional voice sample adds a second factor.
+                            After that, logging in takes one glance.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/student1.png')}}" alt="Register with your face"
+                            loading="lazy"></div>
+                </div>
+                <div class="step rev">
+                    <div class="txt">
+                        <div class="num">STEP 02</div>
+                        <h3>Join a class</h3>
+                        <p>Open the teacher's link, scan the QR code, or type the class code. You're enrolled in one
+                            tap.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/student2.png')}}" alt="Join a class" loading="lazy"></div>
+                </div>
+                <div class="step">
+                    <div class="txt">
+                        <div class="num">STEP 03</div>
+                        <h3>Get marked present</h3>
+                        <p>Your face or voice is verified during the teacher's session, so there is no sign-in sheet to
+                            pass around.</p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/student3.png')}}" alt="Get marked present" loading="lazy">
+                    </div>
+                </div>
+                <div class="step rev">
+                    <div class="txt">
+                        <div class="num">STEP 04</div>
+                        <h3>Track your own record</h3>
+                        <p>See every subject you're enrolled in with your attendance, and unenroll any time.
+                        </p>
+                    </div>
+                    <div class="shot"><img src="{{url_for('static', filename='img/demo/student4.png')}}" alt="Track your own record"
+                            loading="lazy"></div>
+                </div>
+            </div>
+        
+    </section>
+
+    <!-- tech stack -->
+    <section id="tech" class="wrap">
+        <div class="stack center">
+            <div class="eyebrow">— Our Backend —</div>
+            <h2>Advanced Tech Stack</h2>
+            <div class="grid3 g4" style="text-align:left">
+                <div class="card tc">
+                    <div class="tic">⚡</div>
+                    <h3>Streamlit & Flask</h3>
+                    <p>Reactive Python front end for the teacher and student portals.</p><span
+                        class="tag">Platform</span>
+                </div>
+                <div class="card tc">
+                    <div class="tic">👁️</div>
+                    <h3>Face Recognition</h3>
+                    <p>dlib 128-D embeddings with an SVC classifier and a distance check.</p><span class="tag">Vision
+                        AI</span>
+                </div>
+                <div class="card tc">
+                    <div class="tic">🎙️</div>
+                    <h3>Voice Embeddings</h3>
+                    <p>Resemblyzer 256-D voice signatures compared by cosine similarity.</p><span class="tag">Audio
+                        AI</span>
+                </div>
+                <div class="card tc">
+                    <div class="tic">☁️</div>
+                    <h3>Supabase Cloud</h3>
+                    <p>PostgreSQL database for users, subjects and attendance logs.</p><span class="tag">Storage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- gold section -->
+    <section class="gold-sec">
+        <h2>Ready to retire the roll call?</h2>
+        <p>Open Attendify and run your first class in minutes.</p>
+        <a class="btn launch" href="https://attendify-ai-attendance.streamlit.app/">Launch Attendify →</a>
+    </section>
+
+
+    <footer>
+        <div class="wrap">
+            <div class="fgrid">
+                <div class="fbrand">
+                    <a class="logo" href="#top"><i>✓</i><em style="font-style:normal">Attend<span>ify</span></em></a>
+                    <p>AI-powered attendance with face and voice recognition, built for modern classrooms.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">AI Attendance</a>
+                    <a href="#journey">How it works</a>
+                    <a href="#tech">Tech stack</a>
+                </div>
+                <div>
+                    <h4>Journeys</h4>
+                    <a href="#journey" >For Teachers</a>
+                    <a href="#journey" >For Students</a>
+                </div>
+                <div>
+                    <h4>Get started</h4><a class="launch" href="https://attendify-ai-attendance.streamlit.app/">Teacher portal</a><a class="launch" href="https://attendify-ai-attendance.streamlit.app/">Student
+                        portal</a>
+                </div>
+            </div>
+            <div class="fbottom">© 2026 Attendify · Made for smarter classrooms</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

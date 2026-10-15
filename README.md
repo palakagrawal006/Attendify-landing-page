@@ -33,8 +33,8 @@ vercel.json
 ## Run locally
  
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-LANDING-REPO.git
-cd YOUR-LANDING-REPO
+git clone [https://github.com/YOUR-USERNAME/YOUR-LANDING-REPO.git](https://github.com/palakagrawal006/Attendify-landing-page)
+cd Attendify-landing-page
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -54,7 +54,7 @@ Import the repo on [Vercel](https://vercel.com). No build settings are needed; `
 ## Related
  
 - App repository: [https://github.com/palakagrawal006/Attendify-AI-Attendance](https://github.com/palakagrawal006/Attendify-AI-Attendance)
-- Live app: [https://attendify-ai-attendance.streamlit.app/](https://attendify-ai-attendance.streamlit.app/))
+- Live app: [https://attendify-ai-attendance.streamlit.app/](https://attendify-ai-attendance.streamlit.app/)
 ## Author
  
 Built by Palak Agrawal.

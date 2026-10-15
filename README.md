@@ -33,7 +33,7 @@ vercel.json
 ## Run locally
  
 ```bash
-git clone [https://github.com/YOUR-USERNAME/YOUR-LANDING-REPO.git](https://github.com/palakagrawal006/Attendify-landing-page)
+git clone https://github.com/YOUR-USERNAME/YOUR-LANDING-REPO.git
 cd Attendify-landing-page
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate

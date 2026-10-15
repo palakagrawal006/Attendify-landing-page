@@ -4,7 +4,7 @@ Responsive marketing page for **[Attendify](https://github.com/palakagrawal006/A
  
 **[Live site](https://attendify-ai-attendance.vercel.app/)** · **[Launch the app](https://attendify-ai-attendance.streamlit.app/)**
  
-<!-- ![Landing page](static/img/demo/preview.png) -->
+[Landing page](static/img/demo/teacher2.png)
  
 ## What's on the page
  
